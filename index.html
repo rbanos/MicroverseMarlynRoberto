@@ -12,12 +12,38 @@
       Thank you for taking the time to help us improve the platform
     </p>
     <form id="survey-form">
-      <label for="name">Name:</label><br />
-      <input type="text" id="name" name="name" required /><br />
-      <label for="email">email:</label><br />
-      <input type="email" id="email" pattern=".+@globex\.com" required /><br>
-      <label for="number">Age</label><br />
-      <input type="number" id="number" name="Age" min="18" max="99"/><br />
+      <label for="name" id="name-label">Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+      /><br />
+      <label for="email" id="email-label">email:</label><br />
+      <input
+        type="email"
+        id="email"
+        pattern=".+@globex\.com"
+        placeholder="Enter your email"
+        required
+      /><br />
+      <label for="number" id="number-label">Age</label><br />
+      <input
+        type="number"
+        id="number"
+        name="Age"
+        min="18"
+        max="99"
+        placeholder="Enter your age"
+      /><br />
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+      </select>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
